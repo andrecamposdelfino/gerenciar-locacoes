@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nova Locação</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>421</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Cadastrar Nova Locação</string>
+    </property>
+    <widget class="QLineEdit" name="txtCliente">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cliente</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtEquipamento">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>40</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Equipamento</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtLocal">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Local</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>70</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Referencia</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtReferencia">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>90</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtQtde">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>90</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>70</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Qtde</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Data</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtData">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00/00/0000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>120</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NFe Rem</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtNfRem">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>120</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NFe Ret</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtNfRet">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>140</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>974</x>
+       <y>260</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+ Nova Locação</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>398</y>
+       <width>971</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Equipamento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Local</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Qtd</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data Inicio</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Remessa</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Retorno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Observações</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>894</x>
+       <y>220</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+ Nova Locação</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>358</y>
+       <width>971</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Equipamento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Local</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Qtd</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data Inicio</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Remessa</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Retorno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Observações</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>894</x>
+       <y>220</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+ Nova Locação</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>358</y>
+       <width>971</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Cliente</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Equipamento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Local</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Qtd</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Data Inicio</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Remessa</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>NFe Retorno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Observações</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnCadastrar">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>250</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cadastrar Locação</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/escavadora.png</normaloff>../assets/escavadora.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCancelar">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../assets/escavadora.png</normaloff>../assets/escavadora.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtObs">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>391</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Observação</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="txtStatus">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>140</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>ATIVO</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FINALIZADO</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>120</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
