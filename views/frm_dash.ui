@@ -112,7 +112,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="btnTodos">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -122,14 +122,14 @@
       </rect>
      </property>
      <property name="text">
-      <string>Todos (2)</string>
+      <string>Todos</string>
      </property>
      <property name="icon">
       <iconset>
        <normaloff>../assets/trator.png</normaloff>../assets/trator.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="btnAtivos">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -139,14 +139,14 @@
       </rect>
      </property>
      <property name="text">
-      <string>Ativos (1)</string>
+      <string>Ativos</string>
      </property>
      <property name="icon">
       <iconset>
        <normaloff>../assets/escavadora.png</normaloff>../assets/escavadora.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="btnFinalizados">
      <property name="geometry">
       <rect>
        <x>230</x>
@@ -156,7 +156,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Finalizado (1)</string>
+      <string>Finalizado</string>
      </property>
      <property name="icon">
       <iconset>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>439</width>
-    <height>311</height>
+    <width>440</width>
+    <height>431</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>10</x>
       <y>10</y>
       <width>421</width>
-      <height>291</height>
+      <height>411</height>
      </rect>
     </property>
     <property name="title">
@@ -233,66 +233,6 @@
        <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
      </property>
     </widget>
-    <widget class="QTableWidget" name="tableWidget">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>398</y>
-       <width>971</width>
-       <height>431</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string>Id</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Cliente</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Equipamento</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Local</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Qtd</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Data Inicio</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Remessa</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Retorno</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Status</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Observações</string>
-      </property>
-     </column>
-    </widget>
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
@@ -309,66 +249,6 @@
       <iconset>
        <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
      </property>
-    </widget>
-    <widget class="QTableWidget" name="tableWidget_2">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>358</y>
-       <width>971</width>
-       <height>431</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string>Id</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Cliente</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Equipamento</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Local</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Qtd</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Data Inicio</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Remessa</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Retorno</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Status</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Observações</string>
-      </property>
-     </column>
     </widget>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
@@ -387,71 +267,11 @@
        <normaloff>../assets/trator (2).png</normaloff>../assets/trator (2).png</iconset>
      </property>
     </widget>
-    <widget class="QTableWidget" name="tableWidget_3">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>358</y>
-       <width>971</width>
-       <height>431</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string>Id</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Cliente</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Equipamento</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Local</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Qtd</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Data Inicio</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Remessa</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>NFe Retorno</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Status</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Observações</string>
-      </property>
-     </column>
-    </widget>
     <widget class="QPushButton" name="btnCadastrar">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>250</y>
+       <y>370</y>
        <width>161</width>
        <height>31</height>
       </rect>
@@ -468,7 +288,7 @@
      <property name="geometry">
       <rect>
        <x>140</x>
-       <y>250</y>
+       <y>370</y>
        <width>101</width>
        <height>31</height>
       </rect>
@@ -479,16 +299,6 @@
      <property name="icon">
       <iconset>
        <normaloff>../assets/escavadora.png</normaloff>../assets/escavadora.png</iconset>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtObs">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>190</y>
-       <width>391</width>
-       <height>21</height>
-      </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_22">
@@ -535,6 +345,16 @@
      </property>
      <property name="text">
       <string>Status</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="txtObs">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>391</width>
+       <height>141</height>
+      </rect>
      </property>
     </widget>
    </widget>

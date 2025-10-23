@@ -26,6 +26,40 @@ def listar_todas_as_locacoes():
     except Exception as error:
         print(error)
 
+def listar_todas_as_locacoes_ativas():
+    try:
+        query = """
+            SELECT * FROM locacoes WHERE Status = "ATIVO"
+        """
+        cursor.execute(query)
+        dados = cursor.fetchall()
+        return dados
+    except Exception as error:
+        print(error)
+
+def listar_todas_as_locacoes_finalizadas():
+    try:
+        query = """
+            SELECT * FROM locacoes WHERE Status = "FINALIZADO"
+        """
+        cursor.execute(query)
+        dados = cursor.fetchall()
+        return dados
+    except Exception as error:
+        print(error)
+
+def somar_todas_as_locacoes():
+    try:
+        query = """
+            SELECT SUM(Qtde) FROM locacoes
+        """
+        cursor.execute(query)
+        dados = cursor.fetchall()
+        return dados
+    except Exception as error:
+        print(error)
+
+
 
 def atualizar_locacao(Cliente, Equipamento, Local, Referencia, Qtde, Data_inicio, Nota_remessa, Nota_retorno, Status, Obs, id):
     try:
