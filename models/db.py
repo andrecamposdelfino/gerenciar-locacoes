@@ -26,6 +26,20 @@ def listar_todas_as_locacoes():
     except Exception as error:
         print(error)
 
+
+def listar_todas_as_locacoes_por_nome(nome):
+    try:
+        query = f"""
+            SELECT * FROM locacoes WHERE Cliente LIKE '%{nome}%'
+        """
+        cursor.execute(query)
+        dados = cursor.fetchall()
+        return dados
+    except Exception as error:
+        print(error)
+
+
+
 def listar_todas_as_locacoes_ativas():
     try:
         query = """

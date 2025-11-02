@@ -1,7 +1,7 @@
-from PyQt5 import uic, QtWidgets
+from PyQt5 import uic, QtWidgets, QtCore
 from PyQt5.QtWidgets import QMessageBox
 
-from models.db import lancar_locacao, listar_todas_as_locacoes, atualizar_locacao, listar_todas_as_locacoes_ativas, listar_todas_as_locacoes_finalizadas
+from models.db import listar_todas_as_locacoes_por_nome, lancar_locacao, listar_todas_as_locacoes, atualizar_locacao, listar_todas_as_locacoes_ativas, listar_todas_as_locacoes_finalizadas
 
 def open_formulario_cadastro_de_locacao():
     form_cadastra_locacao.show()
@@ -143,7 +143,22 @@ def atualizar_locacoes():
     except Exception as error:
         QMessageBox.warning(None, "Error", f"Não foi possível atualizar a locação:{error}")
 
+def listar_locacoes_por_nome():
+    cliente = form_dash.txtPesquisar.text()
+    dados = listar_todas_as_locacoes_por_nome(cliente)
+    form_dash.tabela.setRowCount(len(dados))
+    form_dash.tabela.setColumnCount(11)
+    for row in range(0, len(dados)):
+        for column in range(0, 11):
+            form_dash.tabela.setItem(row, column, QtWidgets.QTableWidgetItem(str(dados[row][column])))
 
+    form_dash.tabela.resizeColumnsToContents()
+    form_dash.tabela.resizeRowsToContents()
+    form_dash.tabela.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+    form_dash.tabela.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+    form_dash.tabela.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+
+    form_dash.tabela.cellClicked.connect(carregar_dados_listagem)
     
 
 app = QtWidgets.QApplication([])
@@ -156,10 +171,13 @@ form_dash.btnNovaLocacao.clicked.connect(open_formulario_cadastro_de_locacao)
 form_dash.btnTodos.clicked.connect(listar_locacoes)
 form_dash.btnAtivos.clicked.connect(listar_locacoes_ativas)
 form_dash.btnFinalizados.clicked.connect(listar_locacoes_fanalizadas)
+form_dash.btnPesquisar.clicked.connect(listar_locacoes_por_nome)
 
 form_cadastra_locacao.btnCadastrar.clicked.connect(cadastar_locacao)
 form_atualiza_locacao.btnAlterar.clicked.connect(atualizar_locacoes)
+
 form_dash.show()
+
 listar_locacoes()
 
 app.exec()
